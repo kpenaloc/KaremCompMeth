@@ -13,7 +13,7 @@ def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument('h', help="The height of the ball above the ground, in meters", type=float)
 
-	parser.add_argument('-g', help="The acceleration due to gravity on your planet, in meters per seconds-square", type=float, default=9.8)
+	parser.add_argument('-g', help="The acceleration due to gravity on your planet, in meters per seconds-square", type=float, nargs='?', default=9.8)
 
 	args = parser.parse_args()
 	h = args.h
